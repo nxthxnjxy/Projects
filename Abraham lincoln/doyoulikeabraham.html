@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey page!</title>
+    <!--Webpage name-->
+    <link rel="stylesheet" href="style.css">
+    <!--Links the survey page to the CSS styling page-->
+</head>
+
+<body>
+    <a href="/Users/Nathan/Documents/Html/Abraham%20lincoln/website.html">Back to hompage</a>
+    <!--This links the code back to the original "homepage"-->
+    <br>
+    <!--Adds a line break to make text look not squished-->
+    <br>
+    <div class="survey">
+        <!--The class id lets me style this whole portion of code-->
+        <h2>Survey time!</h2>
+        <!--Heading 2 for the survey title-->
+        <br>
+        <section class="username">
+            <!--The section element groups together related elements.-->
+            <label for="username">What is your name?</label>
+            <!--labels the text as "what is your name"-->
+            <input type="text" name="username" id="nametag">
+            <!--This code makes it so that the user can input their answer as text-->
+        </section>
+        <br>
+        <section class="usergender">
+            <span>What is your gender?</span>
+            <br>
+            <input type="checkbox" name="gender" id="gender1" value="male">
+            <!--This code specifies the type of input which is checkbox and allows the user to choose as many options.-->
+            <label for="gender1">Male</label>
+            <input type="checkbox" name="gender" id="gender2" value="female">
+            <label for="gender2">Female</label>
+            <input type="checkbox" name="gender" id="gender3" value="unknown">
+            <label for="gender3">Prefer not to specify</label>
+        </section>
+        <br>
+        <section class="answers">
+            <label for="answers">Do you like Abraham Lincoln?</label>
+            <input list="answers" id="answer" name="response">
+            <!--The "list" type gives the user a drop down menu to choose the option, or to type their response in-->
+            <datalist id="answers">
+                <option value="Yes!"></option>
+                <option value="No :c"></option>
+                <option value="Maybe"></option>
+            </datalist>
+        </section>
+        <br>
+        <section class="useropinion">
+            <span>Would you like to see more Abraham Lincoln content from me?</span>
+            <br>
+            <input type="radio" name="responses" id="option1" value="yes">
+            <!--radio buttons are mainly used to select only 1 option. To do so, the name attribute must be the same value for each radiobutton-->
+            <label for="option1">Yes</label>
+            <input type="radio" name="responses" id="option2" value="no">
+            <label for="option2">No</label>
+        </section>
+        <br>
+        <section class="extra-info">
+            <label for="extra">Anything else I should know? Recommendations?</label>
+            <br>
+            <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+            <!--Adds a textbox area for the user to add any extra comments-->
+        </section>
+        <br>
+        <section class="submission">
+            <input type="submit" value="Submit">
+            <!--This code is used to submit the user's response, must have a javascript page to submit-->
+        </section>
+    </div>
+</body>
+
+</html>

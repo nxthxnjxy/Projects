@@ -1,0 +1,7 @@
+var userNumber = parseInt(prompt('What number would you like to divide by 7?'));
+
+if (userNumber / 7 && userNumber % 7 === 0) {
+  alert('the number is divisible by 7');
+} else if (userNumber) {
+  alert('the number is not divisible by 7');
+}

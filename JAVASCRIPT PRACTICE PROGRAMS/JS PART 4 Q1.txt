@@ -1,0 +1,13 @@
+var userName = prompt('What is your name?');
+var userInt = parseInt(prompt('How many times do you wan to display your name?'));
+
+if (userInt <= 0) {
+  alert('Invalid Input')
+  
+} else {
+  
+  for (x = 0; x < userInt; x++) {
+    console.log(userName);
+  }
+  
+}

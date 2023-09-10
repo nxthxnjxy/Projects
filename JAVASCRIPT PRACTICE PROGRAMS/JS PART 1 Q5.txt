@@ -1,0 +1,12 @@
+var day = prompt('What day is it today?');
+
+
+if (day === 'friday') {
+  console.log('Have a good weekend!');
+} else if (day === 'sunday') {
+  console.log('Have a nice Sunday');
+} else if (day === 'monday' || day === 'tuesday' || day === 'wednesday' || day === 'thursday' || day === 'saturday') {
+  console.log('Have a good day!')
+} else {
+  alert('Enter a valid day.')
+}

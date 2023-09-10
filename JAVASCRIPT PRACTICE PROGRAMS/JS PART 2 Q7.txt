@@ -1,0 +1,8 @@
+var num1 = parseInt(prompt("Please enter number 1"))
+var num2 = parseInt(prompt("Please enter number 2"))
+
+if (num1 + num2 > 100 && num1 + num2 < 200) {
+  console.log('The sum of your 2 numbers is in between 100 and 200');
+} else if (num1 + num2 < 100 || num1 + num2 > 200) {
+  console.log('The sum of the 2 numbers is not in between 100 and 200');
+}

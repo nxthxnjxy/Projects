@@ -1,0 +1,7 @@
+var userAge = parseInt(prompt('What is your age?'));
+
+if (userAge >= 18) {
+  console.log('You are old enough to vote! happy voting!')
+} else {
+  console.log('You are not old enough to vote.')
+}

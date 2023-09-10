@@ -1,0 +1,37 @@
+.intro {
+    text-align: center;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+    
+a:visited {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.testing {
+    line-height: 1.6;
+}
+
+.video {
+    text-align: center;
+}
+
+.survey {
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}

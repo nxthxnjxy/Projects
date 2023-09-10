@@ -1,0 +1,9 @@
+var num1 = parseInt(prompt('input the first number'));
+var num2 = parseInt(prompt('input the second number'));
+var num3 = parseInt(prompt('input the third number'));
+
+if (num1 * num2 === num3) {
+  console.log('the product of your first and second number is equal to the third number!');
+} else if (num1 * num2 !== num3){
+  console.log('the product of your first and second number is not equal to the third number!')
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search Page!</title>
+    <!--Webpage name-->
+    <link rel="stylesheet" href="stylesforschool.css">
+    <!--Links the survey page to the CSS styling page-->
+    <script src="student.js"></script>
+</head>
+
+<body>
+    <div id="redirect">
+        <a href="homepage.html"><button class="backToHomepage">Back to Homepage</button></a>
+    </div>
+    <!--This links the code back to the original "homepage"-->
+    <br>
+    <!--Adds a line break to make text look not squished-->
+    <br>
+    <div class="studentSearchPage">
+        <!--The class id lets me style this whole portion of code-->
+        <h2>Welcome to the Student Search Page!</h2>
+        <!--Heading 2 for the survey title-->
+        <section class="header1">
+            <!--The section element groups together related elements.-->
+            <label for="header1">Search for an announcement:</label>
+            <!--labels the text as "what is your name"-->
+        </section>
+        <br>
+        <section class="gradesApplicable">
+            <span>What grade/s?</span>
+            <br>
+            <br>
+            <input type="checkbox" name="grades" id="htmlSGrade9" value="grade9">
+            <!--This code specifies the type of input which is checkbox and allows the user to choose as many options.-->
+            <label for="htmlSGrade9">Grade 9</label>
+            <input type="checkbox" name="grades" id="htmlSGrade10" value="grade10">
+            <label for="htmlSGrade10">Grade 10</label>
+            <input type="checkbox" name="grades" id="htmlSGrade11" value="grade11">
+            <label for="htmlSGrade11">Grade 11</label>
+            <input type="checkbox" name="grades" id="htmlSGrade12" value="grade12">
+            <label for="htmlSGrade12">Grade 12</label>
+        </section>
+        <br>
+
+        <section class="dropDown">
+            <label for="htmlSCategories">What category is applicable to your post?</label>
+            <!--The "list" type gives the user a drop down menu to choose the option, or to type their response in-->
+            <select id="htmlSCategories">
+                <option value="None">None</option>
+                <option value="Business">Business</option>
+                <option value="Music">Music</option>
+                <option value="Gym">Gym</option>
+                <option value="Drama">Drama</option>
+                <option value="IBT">IBT</option>
+                <option value="Non-IBT">Non-IBT</option>
+                <option value="Special Events">Special Events</option>
+                <option value="Intramurals">Intramurals</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+        </section>
+        <br>
+        <!--Dropdown for clubs-->
+        <section class="clubs">
+            <label for="htmlSClubs">What club is applicable to your post?</label>
+            <!--The "list" type gives the user a drop down menu to choose the option, or to type their response in-->
+            <select id="htmlSClubs">
+                <option value="None2">None</option>
+                <option value="DECA">DECA</option>
+                <option value="Hack Club">Hack Club</option>
+                <option value="Breakfast Club">Breakfast Club</option>
+                <option value="Debate Club">Debate Club</option>
+                <option value="Chess Club">Chess Club</option>
+                <option value="Eco Club">Eco Club</option>
+                <option value="Stempire">Stempire</option>
+                <option value="HOSA">HOSA</option>
+                <option value="Black Diamond">Black Diamond</option>
+                <option value="Cricket Club">Cricket Club</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="All clubs">All Clubs</option>
+                <select>
+        </section>
+        <br>
+        <div class="submissions">
+            <a href="resultspage.html"><button id="post" onclick="saveStudentData()">Search</button></a>
+            <!--when clicking this button, it will call the function saveStudentData() and the function will store the inputed choices into the local storage-->
+            <button id="reset">Reset</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

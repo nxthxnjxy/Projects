@@ -1,0 +1,13 @@
+var weight=Number(prompt("What is your weight?"));
+
+if (weight >= 205 && weight <= 265) {
+  console.log('Heavyweight');
+} else if (weight > 185 && weight <= 205) {
+  console.log('Light Heavyweight');
+} else if (weight > 170 && weight <= 185) {
+  console.log('Middleweight');
+} else if (weight > 155 && weight <= 170) {
+  console.log('Welterweight');
+} else if (weight >= 140 && weight <= 155) {
+  console.log('Lightweight');
+}

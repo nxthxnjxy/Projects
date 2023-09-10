@@ -1,0 +1,15 @@
+let userGrade = parseInt(prompt('what is the grade u achieved u L bozo'));
+
+if (userGrade >= 80 && userGrade <= 100) {
+  console.log('Your grade is an A, your not an L bozo!');
+} else if (userGrade > 100 || userGrade < 0) {
+  alert('input a grade in between 0 and 100')
+} else if (userGrade >= 70 && userGrade <= 79) {
+  console.log('Your grade is a B, Your somewhat L bozo');
+} else if (userGrade >= 60 && userGrade <= 69) {
+  console.log('Your an L bozo, not confirmed, just an L bozo to me');
+} else if (userGrade >= 50 && userGrade <= 59) {
+  console.log('You barely passed! Congratualations! you are an L bozo');
+} else if (userGrade < 50 ) {
+  console.log('get better/u are le bozo');
+}

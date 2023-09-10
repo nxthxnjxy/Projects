@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Announcement Creator!</title>
+    <!--Webpage name-->
+    <link rel="stylesheet" href="stylesforschool.css">
+    <!--Links the survey page to the CSS styling page-->
+    <script src="teacher.js"> </script>
+</head>
+
+<body onload="saveExistingAnnouncement()">
+    <div id="redirect">
+        <a href="homepage.html"><button class="backToHomepage">Back to Homepage</button></a>
+    </div>
+    <div class="teacherAnnouncement">
+        <h2>Welcome to the Teacher Announcement Creator Page!</h2> <!--greets the teacher-->
+        <section class="Header1">
+            <label for="Header1">Create an announcement here:</label>
+        </section>
+        <br>
+        <section class="Grades">
+            <span>What grade/s?</span>
+            <br>
+            <br>
+            <input type="checkbox" name="grades" id="htmlTGrade9" value="grade9">
+            <!--This code specifies the type of input which is checkbox and allows the user to choose as many options.-->
+            <label for="htmlTGrade9">Grade 9</label>
+            <input type="checkbox" name="grades" id="htmlTGrade10" value="grade10">
+            <label for="htmlTGrade10">Grade 10</label>
+            <input type="checkbox" name="grades" id="htmlTGrade11" value="grade11">
+            <label for="htmlTGrade11">Grade 11</label>
+            <input type="checkbox" name="grades" id="htmlTGrade12" value="grade12">
+            <label for="htmlTGrade12">Grade 12</label>
+        </section>
+        <br>
+
+        <section class="dropDown">
+            <label for="htmlTCategories">What category?</label>
+            <!--The "list" type gives the user a drop down menu to choose the option, or to type their response in-->
+            <select id="htmlTCategories">
+                <option value="None">None</option>
+                <option value="Business">Business</option>
+                <option value="Music">Music</option>
+                <option value="Gym">Gym</option>
+                <option value="Drama">Drama</option>
+                <option value="IBT">IBT</option>
+                <option value="Non-IBT">Non-IBT</option>
+                <option value="Special Events">Special Events</option>
+                <option value="Intramurals">Intramurals</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+        </section>
+        <br>
+        <section class="clubs">
+            <label for="htmlTClubs">What club?</label>
+            <!--The "list" type gives the user a drop down menu to choose the option, or to type their response in-->
+            <select id="htmlTClubs">
+                <option value="None2">None</option>
+                <option value="DECA">DECA</option>
+                <option value="Hack Club">Hack Club</option>
+                <option value="Breakfast Club">Breakfast Club</option>
+                <option value="Debate Club">Debate Club</option>
+                <option value="Chess Club">Chess Club</option>
+                <option value="Eco Club">Eco Club</option>
+                <option value="Stempire">Stempire</option>
+                <option value="HOSA">HOSA</option>
+                <option value="Black Diamond">Black Diamond</option>
+                <option value="Cricket Club">Cricket Club</option>
+                <option value="Volleyball">Volleyball</option>
+                <option value="All clubs">All Clubs</option>
+                <select>
+        </section>
+
+        <br>
+        <section class="Textarea">
+            <label for="Textarea">Write your message here:</label>
+            <br>
+            <textarea id="htmlTTextArea" name="extra" rows="3" cols="40"></textarea>
+            <!--Adds a textbox area for the user to add any extra comments-->
+        </section>
+        <br>
+
+        <div class="submissions"> <!--The purpose of this code is to post, or reset all the options chosen-->
+            <button id="post" onclick="saveAnnouncement()">Post</button>
+            <button id="reset">Reset</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

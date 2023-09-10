@@ -1,0 +1,2 @@
+var number = parseInt(prompt('Enter a number'))
+alert(Number.isInteger(Math.sqrt(number)));

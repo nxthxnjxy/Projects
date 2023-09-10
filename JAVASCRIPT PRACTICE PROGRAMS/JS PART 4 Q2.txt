@@ -1,0 +1,9 @@
+var num = parseInt(prompt());
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+if (0 > num || num > 8){
+    alert('please input a valid number')
+} else {
+  console.log(days[num-1])
+}

@@ -1,0 +1,7 @@
+var user = prompt('input a letter');
+
+if (user === 'a' || user === 'e' || user === 'i' || user === 'o' || user === 'u' ) {
+  console.log('the letter is a vowel');
+} else {
+  console.log('the letter is a consonant');
+}

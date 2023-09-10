@@ -1,0 +1,21 @@
+var total = 0;
+
+var counter = 0;
+
+var numOfTimes = parseInt(prompt('Please enter a positive integer'))
+
+
+function random() {
+  
+  if (numOfTimes < 0) {
+    console.log('enter a valid integer')
+  } else {
+      
+      while (counter < numOfTimes) {
+        var blah = prompt('enter integers pls');
+        counter++;
+      }
+  }
+
+random()
+console.log()

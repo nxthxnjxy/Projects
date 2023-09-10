@@ -1,0 +1,13 @@
+var hour=Number(prompt('What is the hour?'));
+var minute=Number(prompt('What is the minutes?'));
+var second=Number(prompt('what is the seconds?'));
+
+console.log(hour + ' : ' + minute + ' : ' + second);
+
+if (hour < 10) {
+  console.log('Good Morning!');
+} else if (hour >= 14) {
+  console.log('Good Afternoon!');
+} else if (hour > 17) {
+  console.log('Good Evening');
+}
